@@ -1,18 +1,23 @@
 function mostrar()
 {
-
-	var contador=0;
-	var positivo=0;
-	var negativo=1;
-	var respuesta='si';
+	var contador;
+	var positivo;
+	var negativo;
+	var respuesta;
 	var suma;
 	var multiplicacion;
 	var numero;
 
-	while(contador)
+	contador=0;
+	positivo=0;
+	negativo=1;
+	respuesta='si';
+
+	while(respuesta!="n")
 	{
 		numero=parseInt(prompt("Ingrese un número"));
-		
+		numero=parseInt(numero);
+		respuesta=prompt("Desea seguir ingresando numeros?: (si/no)");
 	}
 
 document.getElementById('suma').value=positivo;
